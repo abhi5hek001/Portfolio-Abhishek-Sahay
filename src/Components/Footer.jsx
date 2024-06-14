@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import codeforcesIcon from "../images/socials/codeforces.svg"
 
 /**
  * 💡 Learning resources
@@ -35,9 +36,9 @@ const Footer = (props) => {
     linkedIn,
     medium,
     name,
-    primaryColor,
     twitter,
     youTube,
+    codeforces,
   } = props;
 
   return (
@@ -49,7 +50,7 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
+        backgroundColor: "rgba(104,116,66,1)",
         width: "100vw"
       }}
     >
@@ -73,6 +74,11 @@ const Footer = (props) => {
         {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
+          </a>
+        )}
+        {codeforces && (
+          <a href={`https://codeforces.com/profile/${codeforces}`} target="_blank" rel="noopener noreferrer">
+            <img src={codeforcesIcon} alt="Codeforces" className="socialIcon" />
           </a>
         )}
         {instagram && (
@@ -114,7 +120,7 @@ const Footer = (props) => {
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
-        Created by {name}
+       © Created by {name}
       </p>
     </div>
   );

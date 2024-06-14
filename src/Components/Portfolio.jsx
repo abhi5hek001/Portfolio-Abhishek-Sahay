@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/coder.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "coder coding on desktop";
 
 /**
  * Project list
@@ -31,37 +31,37 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "SafeSky: A Revolutionary Aerial Hazard Monitoring System.",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Made a full fledged website within 32 hours during Smart India Hackathon, 2023 held at Chittoor, AP.",
+    url: "https://abhi5hek001.github.io/SafeSky/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "NewsMonkey: Your daily News App",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Fetches daily news on different aspects and present it to you at a single place.",
+    url: "https://news-monkey-psi-lac.vercel.app/",
   },
   {
-    title: "My Resume Site",
+    title: "Voice Controlled Gaming Studio",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Build a gaming website which is a hub of multiple sound controlled games in Global Gamejam 2023 within 48 hours.",
+    url: "https://abhi5hek001.github.io/Gaming-Hub/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Daily Motivation Quote Generator",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Created a quote generator website that can generate a random quote by a single click.",
+    url: "https://abhi5hek001.github.io/Quote-Generator/",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="portfolio" style={{backgroundColor: "#FAFBFD"}}>
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+      <div style={{ display: "flex", flexDirection: "row-reverse", paddingTop: "3rem" }}>
+        <div style={{ maxWidth: "50%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
