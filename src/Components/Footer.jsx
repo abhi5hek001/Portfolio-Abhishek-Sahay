@@ -42,7 +42,7 @@ const Footer = (props) => {
   } = props;
 
   return (
-    <div
+    <section
       id="footer"
       style={{
         display: "flex",
@@ -53,14 +53,14 @@ const Footer = (props) => {
         backgroundColor: "rgb(255,163,67)",
         width: "100vw"
       }}
-    >
+      >
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           gap: "2.5rem",
         }}
-      >
+        >
         {email && (
           <a href={`mailto:${email}`}>
             <img src={envelopeIcon} alt="email" className="socialIcon" />
@@ -83,9 +83,9 @@ const Footer = (props) => {
         )}
         {instagram && (
           <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
+          href={`https://www.instagram.com/${instagram}`}
+          target="_blank"
+          rel="noopener noreferrer"
           >
             <img src={instagramIcon} alt="Instagram" className="socialIcon" />
           </a>
@@ -122,7 +122,7 @@ const Footer = (props) => {
       <p className="small" style={{ color: "black", fontSize: "1.1em", }}>
        © Created by {name}
       </p>
-    </div>
+    </section>
   );
 };
 

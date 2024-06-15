@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 div#main {
   display: flex;
   flex-direction: column;
@@ -124,3 +128,34 @@ img.socialIcon {
   width: 30px;
 }
 
+@keyframes loader {
+  0% {
+    width: "0%"
+  }
+  25% {
+    width: "40%"
+  }
+  60%{
+    width: "80%";
+  }
+  90%{
+    width: "95%";
+  }
+  100% {
+    width: "100%";
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  opacity: 0; 
+  animation: fadeIn 1s forwards;
+}
