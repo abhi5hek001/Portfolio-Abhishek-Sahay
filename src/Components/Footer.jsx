@@ -11,10 +11,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import devDotToIcon from "../images/socials/devdotto.svg";
-import envelopeIcon from "../images/socials/envelope.svg";
-import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
-import linkedInIcon from "../images/socials/linkedin.svg";
+import envelopeIcon from "../images/socials/email.png";
+import gitHubIcon from "../images/socials/github.png";
+import instagramIcon from "../images/socials/instagram.png";
+import linkedInIcon from "../images/socials/linkedin.png";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
@@ -50,7 +50,7 @@ const Footer = (props) => {
         alignItems: "center",
         gap: "2.5rem",
         padding: "5rem 0 3rem",
-        backgroundColor: "rgba(104,116,66,1)",
+        backgroundColor: "rgb(255,163,67)",
         width: "100vw"
       }}
     >
@@ -119,7 +119,7 @@ const Footer = (props) => {
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className="small" style={{ color: "black", fontSize: "1.1em", }}>
        © Created by {name}
       </p>
     </div>

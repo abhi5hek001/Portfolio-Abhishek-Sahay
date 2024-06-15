@@ -17,6 +17,8 @@ const Header = () => {
         background: "rgba(255,255,255,0.75)",
         padding: "1.3rem",
         top: 0,
+        fontFamily: "garamond",
+        fontSize: "1.2rem",
         width: "100%",
         zIndex: 10,
       }}
